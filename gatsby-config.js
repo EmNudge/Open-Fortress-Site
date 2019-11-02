@@ -1,3 +1,5 @@
+require("dotenv").config()
+
 module.exports = {
   siteMetadata: {
     title: `Open Fortress`,
@@ -36,6 +38,19 @@ module.exports = {
     },
     `gatsby-plugin-sass`,
     `gatsby-transformer-json`,
+    {
+      resolve: "gatsby-plugin-firebase",
+      options: {
+        features: {
+          auth: false,
+          database: false,
+          firestore: true,
+          storage: true,
+          messaging: false,
+          functions: false,
+        },
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

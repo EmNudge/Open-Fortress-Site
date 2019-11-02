@@ -38,7 +38,6 @@ const Footer = () => {
       return { ...node, path: icon.node.publicURL }
     })
   })(data);
-  console.log(icons)
 
   return (
     <footer>

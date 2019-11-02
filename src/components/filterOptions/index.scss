@@ -1,0 +1,29 @@
+.filter-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  label {
+    font-size: 1.1em;
+  }
+  input[type=text] {
+    padding: 5px 15px;
+    font-size: 1.25em;
+    border: none;
+  }
+
+  .text-filter-container {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-gap: 5px;
+  }
+
+  .checkbox-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+  }
+}
