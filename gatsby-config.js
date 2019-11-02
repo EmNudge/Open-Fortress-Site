@@ -38,19 +38,7 @@ module.exports = {
     },
     `gatsby-plugin-sass`,
     `gatsby-transformer-json`,
-    {
-      resolve: "gatsby-plugin-firebase",
-      options: {
-        features: {
-          auth: false,
-          database: false,
-          firestore: true,
-          storage: true,
-          messaging: false,
-          functions: false,
-        },
-      },
-    },
+    `gatsby-transformer-toml`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

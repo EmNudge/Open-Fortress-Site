@@ -1,0 +1,19 @@
+[[faq]]
+question = "What is Open Fortress?"
+answer = """Open Fortress is a Open Source TF2 mod designed with the intent of being a free, easily distributable and easily modifiable sourcemod with an ideal of fun and creative possibilities in its additions in order to better serve its playerbase as a whole.
+Basically, we're making something fun for you to play, and you get to see how we did it and do stuff with it yourself if you like! Our intention for OF is for it to be infinitely customizable to anyone's liking."""
+
+[[faq]]
+question = "Will this mod only be focusing on Deathmatch?"
+answer = """No. We are currently making great progress on completing the Deathmatch gamemode so that we can get to experimenting with new ideas afterward.
+We have a lot of ideas going around and we would love to share all of them but if we work on a lot of gamemodes at once its hard to manage the workflow and usually results in a slower development time."""
+
+[[faq]]
+question = "Are any of the assets or code shared with other mods like Team Deathmatch Classic or Team Fortress 2 Classic?"
+answer = """The code features certain snippets of Open Source code on the valve developer wiki or openly avalible repos. While the art assets are mainly original, we got permission for certain models and textures like the Tommy Gun and the Landfall asset pack.
+While the Mercenary concept took inspiration from Blaholtzen's concept it was, alongside the model, made entirely by @DrPyspy and Blaholtzen gave us the Thumbs Up. Everything inside the mod is either original or used with permission. Be sure to check out the Special thanks in our credits to see every asset we used.
+There is some amazing stuff there! Be sure to check out the creators!"""
+
+[[faq]]
+question = "Will this mod be releasing on Steam?"
+answer = """No. When Valve rejected Team Fortress 2008 they explicitly stated no mod featuring the leaked codebase for TF2 would ever be on Steam and we got direct confirmation by Valve that mods using the leaked code are not allowed on steam."""

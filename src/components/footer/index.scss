@@ -26,6 +26,16 @@ footer {
       margin-top: 10px;
       display: flex;
       flex-direction: column;
+      a {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-gap: 8px;
+
+        &:before {
+          content: '>';
+          font-weight: bold;
+        }
+      }
     }
   }
 
@@ -40,7 +50,9 @@ footer {
         color: white;
         display: grid;
         grid-template-columns: 20px auto;
+        align-items: center;
         grid-gap: 15px;
+
         img {
           width: 20px;
           opacity: 0.8;

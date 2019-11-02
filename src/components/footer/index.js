@@ -54,11 +54,11 @@ const Footer = () => {
         <div className="directory">
           <h2>Directory</h2>
           <div className="routes">
-            <Link to="/">&gt; Home</Link>
-            <Link to="/servers">&gt; Servers</Link>
-            <Link to="/blog">&gt; Blog</Link>
-            <Link to="/faq">&gt; F.A.Q.</Link>
-            <Link to="/credits">&gt; Credits</Link>
+            <Link to="/">Home</Link>
+            <Link to="/servers">Servers</Link>
+            <Link to="/blog">Blog</Link>
+            <Link to="/faq">F.A.Q.</Link>
+            <Link to="/credits">Credits</Link>
           </div>
         </div>
         <div className="social-icons">

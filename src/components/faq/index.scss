@@ -1,0 +1,27 @@
+.faq {
+  margin: 40px 0;
+  font-size: 1.3em;
+  line-height: 1.5em;
+
+  .question, .answer {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    grid-gap: 10px;
+
+    &:before {
+      font-weight: bold;
+      color: #df27ff;
+    }
+  }
+
+  .question {
+    &:before {
+      content: 'Q:';
+    }
+  }
+  .answer {
+    &:before {
+      content: 'A:';
+    }
+  }
+}

@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 
 import ServerBanner from "../components/serverBanner"
 import FilterOptions from "../components/filterOptions"
+import LoadingIcon from "../components/loadingIcon"
 
 const Servers = () => {
   const [servers, setServers] = React.useState([])
@@ -67,13 +68,19 @@ const Servers = () => {
         onChange={filters => setFilters(filters)}
         filters={filters}
       />
-      {getFilteredMaps(servers).map(server => (
-        <ServerBanner
-          key={`${server.ip}:${server.port}`}
-          {...server}
-          path={maps.get(server.map)}
-        />
-      ))}
+      {getFilteredMaps(servers).length ? (
+        getFilteredMaps(servers).map(server => (
+          <ServerBanner
+            key={`${server.ip}:${server.port}`}
+            {...server}
+            path={maps.get(server.map)}
+          />
+        ))
+      ) : (
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <LoadingIcon />
+        </div>
+      )}
     </Layout>
   )
 }
