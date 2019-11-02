@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Github",
+    "url": "https://github.com/KaidemonLP/open_fortress",
+    "icon": "github"
+  },
+  {
+    "name": "Discord",
+    "url": "https://discord.gg/Jk3NUb7",
+    "icon": "discord"
+  },
+  {
+    "name": "Twitter",
+    "url": "https://twitter.com/openfortress",
+    "icon": "twitter"
+  },
+  {
+    "name": "Youtube",
+    "url": "https://www.youtube.com/channel/UCtqmIR--kRAAGRdJ-LtEu1A/videos",
+    "icon": "youtube"
+  }
+]

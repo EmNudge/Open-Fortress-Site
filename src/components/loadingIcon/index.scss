@@ -1,0 +1,20 @@
+.loading-icon img {
+  height: 100px;
+  animation: rotator 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+@keyframes rotator {
+  0%, 100% {
+    animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+  }
+  0% {
+    transform: rotateZ(0deg) scale(1);
+  }
+  50% {
+    transform: rotateZ(900deg) scale(.7);
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  100% {
+    transform: rotateZ(1800deg) scale(1);
+  }
+}

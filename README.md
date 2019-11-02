@@ -1,2 +1,3 @@
-# Open-Fortress-Site
-Website for https://openfortress.fun
+# Open Fortress
+
+This is the official website for the mod Open Fortress.
