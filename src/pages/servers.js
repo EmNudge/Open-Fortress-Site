@@ -36,7 +36,7 @@ const Servers = () => {
     })()
   }, [])
 
-  const getFilteredMaps = servers => {
+  const getFilteredServers = servers => {
     if (!filters) return
 
     const { hasPlayers, input } = filters
@@ -60,6 +60,29 @@ const Servers = () => {
     })
   }
 
+  const getServersComponent = servers => {
+    if (!servers.length) return (
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <LoadingIcon />
+      </div>
+    );
+
+    const filteredServers = getFilteredServers(servers);
+    if (filteredServers.length) return filteredServers.map(server => (
+      <ServerBanner
+        key={`${server.ip}:${server.port}`}
+        {...server}
+        path={maps.get(server.map)}
+      />
+    ));
+
+    return (
+      <div style={{ display: "flex", justifyContent: "center", marginTop: 100 }}>
+        <h2 style={{ fontWeight: 100 }}>No servers matched your filter.</h2>
+      </div>
+    )
+  }
+
   return (
     <Layout>
       <SEO title="Servers" />
@@ -68,19 +91,7 @@ const Servers = () => {
         onChange={filters => setFilters(filters)}
         filters={filters}
       />
-      {getFilteredMaps(servers).length ? (
-        getFilteredMaps(servers).map(server => (
-          <ServerBanner
-            key={`${server.ip}:${server.port}`}
-            {...server}
-            path={maps.get(server.map)}
-          />
-        ))
-      ) : (
-        <div style={{ display: "flex", justifyContent: "center" }}>
-          <LoadingIcon />
-        </div>
-      )}
+      {getServersComponent(servers)}
     </Layout>
   )
 }

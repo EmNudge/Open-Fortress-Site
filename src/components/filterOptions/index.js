@@ -23,11 +23,11 @@ const ServerBanner = ({ onChange, filters }) => {
   return (
     <div className="filter-options">
       <div className="text-filter-container">
-        <label htmlFor="map-filter">Filter Maps</label>
+        <label htmlFor="server-filter">Filter Servers</label>
         <input
           type="text"
-          id="map-filter"
-          placeholder="filter maps"
+          id="server-filter"
+          placeholder="filter servers"
           value={input}
           onChange={inputChange}
         />
