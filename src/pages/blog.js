@@ -1,33 +1,20 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import FAQ from '../components/faq'
+import PostPreview from "../components/postPreview"
+import usePosts from "../hooks/usePosts"
 
 const BlogPage = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      allFaqsToml {
-        edges {
-          node {
-            faq {
-              answer
-              question
-            }
-          }
-        }
-      }
-    }
-  `)
-
-  const faqs = data.allFaqsToml.edges[0].node.faq;
+  const posts = usePosts()
 
   return (
     <Layout>
       <SEO title="Blog" />
-      <h1>Frequently Asked Questions</h1>
-      {faqs.map(faq => <FAQ key={faq.question} {...faq}/>)}
+      <h1>Posts</h1>
+      {posts.map(post => (
+        <PostPreview key={post.slug} {...post} />
+      ))}
     </Layout>
   )
 }

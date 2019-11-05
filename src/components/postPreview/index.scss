@@ -1,0 +1,23 @@
+.post-preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  a {
+    color: white;
+  }
+  .read-more {
+    display: inline-block;
+    background: purple;
+    padding: 10px 20px;
+    font-size: 1.2em;
+  }
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
