@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import FAQ from '../components/faq'
 
-const FaqPage = () => {
+const BlogPage = () => {
   const data = useStaticQuery(graphql`
     query {
       allFaqsToml {
@@ -25,11 +25,11 @@ const FaqPage = () => {
 
   return (
     <Layout>
-      <SEO title="F.A.Q." />
+      <SEO title="Blog" />
       <h1>Frequently Asked Questions</h1>
       {faqs.map(faq => <FAQ key={faq.question} {...faq}/>)}
     </Layout>
   )
 }
 
-export default FaqPage
+export default BlogPage

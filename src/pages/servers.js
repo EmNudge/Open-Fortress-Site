@@ -8,7 +8,7 @@ import ServerBanner from "../components/serverBanner"
 import FilterOptions from "../components/filterOptions"
 import LoadingIcon from "../components/loadingIcon"
 
-const Servers = () => {
+const ServersPage = () => {
   const [servers, setServers] = React.useState([])
   const [maps, setMaps] = React.useState(null)
   const [filters, setFilters] = React.useState({})
@@ -96,4 +96,4 @@ const Servers = () => {
   )
 }
 
-export default Servers
+export default ServersPage
