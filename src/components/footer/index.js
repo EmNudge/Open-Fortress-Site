@@ -1,43 +1,12 @@
 import { Link } from "gatsby"
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import useSocialIcons from '../../hooks/useSocialIcons'
 import MainLogo from "../../images/svg/full logo.svg"
 import "./index.scss"
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-
-  const data = useStaticQuery(graphql`
-    query {
-      allSocialIconsJson {
-        edges {
-          node {
-            icon
-            name
-            url
-          }
-        }
-      }
-      allFile(filter: {extension: {eq: "svg"}}) {
-        edges {
-          node {
-            name
-            publicURL
-          }
-        }
-      }
-    }
-  `);
-
-  const icons = ((queryData) => {
-    const icons = queryData.allSocialIconsJson.edges;
-    const files = queryData.allFile.edges;
-
-    return icons.map(({node}) => {
-      const icon = files.find(({node: fileNode}) => fileNode.name === node.icon)
-      return { ...node, path: icon.node.publicURL }
-    })
-  })(data);
+  const icons = useSocialIcons()
 
   return (
     <footer>

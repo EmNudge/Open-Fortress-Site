@@ -10,13 +10,10 @@ const usePosts = () => {
               author
               slug
               title
+              created
               banner {
                 sharp: childImageSharp {
-                  fluid( 
-                    maxWidth: 100
-                    maxHeight: 100
-                    duotone: { highlight: "ddbbff", shadow: "#663399" }
-                  ) {
+                  fluid {
                     ...GatsbyImageSharpFluid_withWebp
                   }
                 }

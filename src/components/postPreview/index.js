@@ -1,22 +1,39 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
 import Image from 'gatsby-image'
 import "./index.scss"
 
-const PostPreview = ({ author, title, slug, bgImage, date, banner }) => {
+const PostPreview = ({ author, title, slug, banner, created }) => {
   const link = `/blog/${slug}`;
+  const data = useStaticQuery(graphql`
+    query {
+      file(name: {eq: "calendar"}) {
+        publicURL
+      }
+    }
+  `);
+  const calendar = data.file.publicURL;
 
   return (
     <div className="post-preview">
-      <span>{date}</span>
-      <h1>{title}</h1>
-      <h4>by {author}</h4>
-      <Link className="read-more" to={link}>Read More</Link>
-      <div className="container" style={{ width: 100, height: 100 }}>
-        <Image fluid={banner.sharp.fluid} alt={title} />
+      <div className="meta">
+        <div className="text">
+          <div className="date">
+            <img src={calendar} alt="calendar"/>
+            <span>{created}</span>
+          </div>
+          <h1>{title}</h1>
+          <h4>by {author}</h4>
+        </div>
+        <div>
+          <Link className="read-more" to={link}>Read More</Link>
+        </div>
       </div>
-
-      <img src={bgImage} />
+      <div className="banner-container">
+        <div className="banner">
+          <Image fluid={banner.sharp.fluid} alt={title} />
+        </div>
+      </div>
     </div>
   )
 }
