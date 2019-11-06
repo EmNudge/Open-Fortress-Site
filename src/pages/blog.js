@@ -11,10 +11,12 @@ const BlogPage = () => {
   return (
     <Layout>
       <SEO title="Blog" />
-      <h1>Posts</h1>
-      {posts.map(post => (
-        <PostPreview key={post.slug} {...post} />
-      ))}
+      <h1 style={{marginBottom: 50}}>Posts</h1>
+      <div style={{marginBottom: 50}} className="posts">
+        {posts.map(post => (
+          <PostPreview key={post.slug} {...post} />
+        ))}
+      </div>
     </Layout>
   )
 }
