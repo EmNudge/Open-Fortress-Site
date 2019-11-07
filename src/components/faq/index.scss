@@ -6,7 +6,7 @@
   .question, .answer {
     display: grid;
     grid-template-columns: 20px 1fr;
-    grid-gap: 10px;
+    grid-gap: 30px;
 
     &:before {
       font-weight: bold;

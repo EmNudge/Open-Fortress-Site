@@ -1,26 +1,26 @@
 footer {
   background: #0D1218;
   padding: 60px;
+  line-height: 1.5em;
 
   a {
     color: white;
   }
 
   .contents {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
   }
 
   .metadata {
     display: flex;
     flex-direction: column;
-    line-height: 25px;
   }
 
   .directory {
-    line-height: 25px;
     .routes {
       margin-left: 10px;
       margin-top: 10px;
@@ -40,7 +40,6 @@ footer {
   }
 
   .social-icons {
-    line-height: 25px;
     .icons {
       margin-left: 10px;
       margin-top: 10px;
