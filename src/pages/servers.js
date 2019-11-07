@@ -4,13 +4,16 @@ import { db, storage } from "../firebase.js"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import useMapThumbs from "../hooks/useMapThumbs"
+
 import ServerBanner from "../components/serverBanner"
 import FilterOptions from "../components/filterOptions"
 import LoadingIcon from "../components/loadingIcon"
 
 const ServersPage = () => {
+  const mapsMap = useMapThumbs()
+
   const [servers, setServers] = React.useState([])
-  const [maps, setMaps] = React.useState(null)
   const [filters, setFilters] = React.useState({})
 
   React.useEffect(() => {
@@ -19,20 +22,8 @@ const ServersPage = () => {
         .collection("servers")
         .where("playerMax", ">", 0)
         .get()
-      const tempServers = []
-      querySnapshot.forEach(doc => tempServers.push(doc.data()))
 
-      // get unique list of map names and the url for each image
-      const mapNames = [...new Set(tempServers.map(server => server.map))]
-      const mapPromises = mapNames.map(fileName =>
-        storage.ref(`maps/${fileName}.png`).getDownloadURL()
-      )
-      const mapUrls = await Promise.all(mapPromises)
-      // make into a HashMap for easy retrieval. key = map name, value = map image url
-      const mapsMap = new Map(mapNames.map((name, i) => [name, mapUrls[i]]))
-
-      setMaps(mapsMap)
-      setServers(tempServers)
+      setServers(querySnapshot.docs.map(doc => doc.data()))
     })()
   }, [])
 
@@ -61,23 +52,27 @@ const ServersPage = () => {
   }
 
   const getServersComponent = servers => {
-    if (!servers.length) return (
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <LoadingIcon />
-      </div>
-    );
+    if (!servers.length)
+      return (
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <LoadingIcon />
+        </div>
+      )
 
-    const filteredServers = getFilteredServers(servers);
-    if (filteredServers.length) return filteredServers.map(server => (
-      <ServerBanner
-        key={`${server.ip}:${server.port}`}
-        {...server}
-        path={maps.get(server.map)}
-      />
-    ));
+    const filteredServers = getFilteredServers(servers)
+    if (filteredServers.length)
+      return filteredServers.map(server => (
+        <ServerBanner
+          key={`${server.ip}:${server.port}`}
+          {...server}
+          fluid={mapsMap.get(server.map)}
+        />
+      ))
 
     return (
-      <div style={{ display: "flex", justifyContent: "center", marginTop: 100 }}>
+      <div
+        style={{ display: "flex", justifyContent: "center", marginTop: 100 }}
+      >
         <h2 style={{ fontWeight: 100 }}>No servers matched your filter.</h2>
       </div>
     )

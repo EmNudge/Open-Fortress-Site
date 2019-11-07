@@ -22,6 +22,13 @@ module.exports = {
         path: `${__dirname}/src/data`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `maps`,
+        path: `${__dirname}/src/data/maps`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -50,7 +57,7 @@ module.exports = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         defaultLayouts: {
-          default: `${__dirname}/src/components/blogLayout`
+          default: `${__dirname}/src/components/blogLayout.js`
         },
       },
     },
