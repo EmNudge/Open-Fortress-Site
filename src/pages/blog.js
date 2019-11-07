@@ -6,7 +6,7 @@ import usePosts from "../hooks/usePosts"
 import PostContainer from '../components/postContainer'
 
 const BlogPage = () => {
-  const posts = usePosts()
+  const posts = usePosts({ type: 'date-ascending' })
 
   return (
     <Layout>

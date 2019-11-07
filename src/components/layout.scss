@@ -8,19 +8,18 @@ body {
   font-family: sans-serif;
   background: linear-gradient(#371F45, rgb(120, 73, 126));
   color: white;
+  min-height: 100vh;
+  font-size: 21px;
 }
 
 .main {
-  min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
   
   main {
-    min-height: 100%;
     width: 100%;
     max-width: 1000px;
-    margin: 0 auto;
-    margin-top: 70px;
+    margin: 70px auto;
   }
 }
 

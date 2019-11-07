@@ -50,7 +50,7 @@ module.exports = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         defaultLayouts: {
-          default: `${__dirname}/src/components/blogLayout.js`
+          default: `${__dirname}/src/components/blogLayout`
         },
       },
     },
