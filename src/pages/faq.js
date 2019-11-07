@@ -1,33 +1,19 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
+import useFaq from '../hooks/useFaq'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import FAQ from '../components/faq'
+import FaqContainer from '../components/faqContainer'
 
 const FaqPage = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      allFaqsToml {
-        edges {
-          node {
-            faq {
-              answer
-              question
-            }
-          }
-        }
-      }
-    }
-  `)
-
-  const faqs = data.allFaqsToml.edges[0].node.faq;
+  const faqs = useFaq()
 
   return (
     <Layout>
       <SEO title="F.A.Q." />
       <h1>Frequently Asked Questions</h1>
-      {faqs.map(faq => <FAQ key={faq.question} {...faq}/>)}
+      <FaqContainer faqs={faqs} />
     </Layout>
   )
 }
