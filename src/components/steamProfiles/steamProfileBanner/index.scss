@@ -1,0 +1,35 @@
+.steam-profile {
+  background: rgba(0, 0, 0, .4);
+  color: #B943FF;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 20px;
+  padding: 10px;
+  max-width: 400px;
+  border-radius: 8px;
+
+  .avatar {
+    display: flex;
+    align-items: center;
+    border: 2px solid #B943FF;
+    border-radius: 8px;
+    overflow: hidden;
+
+    img {
+      height: 80px;
+    }
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: .7em;
+    line-height: 1.2em;
+    padding: 5px 0;
+
+    h3 {
+      font-size: 1em;
+    }
+  }
+}
