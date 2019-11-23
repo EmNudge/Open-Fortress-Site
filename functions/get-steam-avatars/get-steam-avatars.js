@@ -1,14 +1,15 @@
 const fetch = require("node-fetch")
 
-exports.handler = async (event, context, callback) => {
+exports.handler = async event => {
   const { steamIDs } = JSON.parse(event.body)
+  const { STEAM_API_KEY } = process.env
 
   const url = "http://api.steampowered.com"
   const path = "/ISteamUser/GetPlayerSummaries/v0002/"
-  const params = [process.env.STEAM_API_KEY, steamIDs.join(",")]
+  const params = [STEAM_API_KEY, steamIDs.join(",")]
 
   const resStr = await fetch(`${url}${path}?${params.join("&")}`)
-  const res = await resStr.json();
+  const res = await resStr.json()
 
   const players = res.response.players.map(player => ({
     name: player.personaname,
@@ -18,8 +19,8 @@ exports.handler = async (event, context, callback) => {
     profileMedium: player.avatarmedium,
   }))
 
-  callback(null, {
+  return {
     statusCode: 200,
     body: JSON.stringify(players),
-  })
+  }
 }
