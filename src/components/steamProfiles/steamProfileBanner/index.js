@@ -1,11 +1,7 @@
 import React from "react"
 import "./index.scss"
 
-const SteamProfile = ({ name, roles, avatar }) => {
-  const pic = avatar
-    ? avatar
-    : "https://icon-library.net/images/steam-question-mark-icon/steam-question-mark-icon-29.jpg"
-
+const SteamProfile = ({ name, roles, avatar, desc }) => {
   const getRoles = roles =>
     roles.reduce((accum, curr, index, { length }) => {
       const str = accum + curr
@@ -15,10 +11,15 @@ const SteamProfile = ({ name, roles, avatar }) => {
       return str + ", and "
     }, "")
 
+  const getPic = avatar => {
+    if (avatar) return avatar;
+    return "https://icon-library.net/images/steam-question-mark-icon/steam-question-mark-icon-29.jpg"
+  }
+
   return (
     <div className="steam-profile">
       <div className="avatar">
-        <img src={pic} alt={name} />
+        <img src={getPic(avatar)} alt={name} />
       </div>
       <div className="text">
         <h2>{name}</h2>
