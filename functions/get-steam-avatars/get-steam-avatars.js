@@ -21,6 +21,6 @@ exports.handler = async event => {
 
   return {
     statusCode: 200,
-    body: JSON.stringify(players),
+    body: JSON.stringify({players}),
   }
 }
