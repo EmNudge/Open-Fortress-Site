@@ -1,5 +1,5 @@
 import React from "react"
-import { db, storage } from "../firebase.js"
+import { db } from "../firebase.js"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"

@@ -3,36 +3,26 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import useCredits from "../hooks/useCredits"
+import useSteamAPI from "../hooks/useSteamAPI"
 import SteamProfiles from "../components/steamProfiles"
 
 const Credits = () => {
   const credits = useCredits()
-  console.log(credits)
 
-  const steamIDs = [
-    "76561198128576895",
-    "76561198006395451",
-    "76561198080213691",
-    "76561198147116054",
-  ]
-
-  if (typeof window !== "undefined")
-    window
-      .fetch("/.netlify/functions/get-steam-avatars", {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ steamIDs }),
-      })
-      .then(res => res.json())
-      .then(console.log)
+  let withSteamAvatars
+  useSteamAPI(credits).then(newMap => {
+    console.log(newMap)
+    withSteamAvatars = newMap
+  })
 
   return (
     <Layout>
       <SEO title="Credits" />
-      <SteamProfiles credits={credits} />
+      {withSteamAvatars ? (
+        <SteamProfiles credits={withSteamAvatars} />
+      ) : (
+        <SteamProfiles credits={credits} />
+      )}
     </Layout>
   )
 }

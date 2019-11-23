@@ -1,9 +1,9 @@
 import React from "react"
 import "./index.scss"
 
-const SteamProfile = ({ name, roles, picUrl }) => {
-  const pic = picUrl
-    ? picUrl
+const SteamProfile = ({ name, roles, avatar }) => {
+  const pic = avatar
+    ? avatar
     : "https://icon-library.net/images/steam-question-mark-icon/steam-question-mark-icon-29.jpg"
 
   const getRoles = roles =>

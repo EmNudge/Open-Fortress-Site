@@ -2,6 +2,7 @@
 name = "KaydemonLP"
 roles = ["Project lead", "Programming"]
 desc = "New Mercenary gloves, Concept Animation."
+steamID = "76561198128576895"
 
 [[credits]]
 name = "AgitationSkeleton"
@@ -11,6 +12,7 @@ roles = ["Gameplay Coordinator"]
 name = "Stachekip"
 roles = ["Gameplay Coordinator", "Voice Acting", "Sound Design"]
 desc = "Voice Acting for Mercenary"
+steamID = "76561198006395451"
 
 [[credits]]
 name = "Alex Episode"
