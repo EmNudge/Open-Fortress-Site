@@ -6,7 +6,7 @@ exports.handler = async event => {
 
   const url = "http://api.steampowered.com"
   const path = "/ISteamUser/GetPlayerSummaries/v0002/"
-  const params = [STEAM_API_KEY, steamIDs.join(",")]
+  const params = [`key=${STEAM_API_KEY}`, `steamids=${steamIDs.join(",")}`]
 
   const resStr = await fetch(`${url}${path}?${params.join("&")}`)
   const res = await resStr.json()
