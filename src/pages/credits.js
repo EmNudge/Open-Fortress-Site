@@ -9,7 +9,9 @@ import SteamProfiles from "../components/steamProfiles"
 const Credits = () => {
   const [credits, setCredits] = React.useState(useCredits())
 
-  useSteamAPI(credits).then(setCredits)
+  React.useEffect(() => {
+    useSteamAPI(credits).then(setCredits)
+  }, [])
 
   return (
     <Layout>
