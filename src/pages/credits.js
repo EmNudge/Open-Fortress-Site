@@ -7,22 +7,14 @@ import useSteamAPI from "../hooks/useSteamAPI"
 import SteamProfiles from "../components/steamProfiles"
 
 const Credits = () => {
-  const credits = useCredits()
+  const [credits, setCredits] = React.useState(useCredits())
 
-  let withSteamAvatars
-  useSteamAPI(credits).then(newMap => {
-    console.log(newMap)
-    withSteamAvatars = newMap
-  })
+  useSteamAPI(credits).then(setCredits)
 
   return (
     <Layout>
       <SEO title="Credits" />
-      {withSteamAvatars ? (
-        <SteamProfiles credits={withSteamAvatars} />
-      ) : (
-        <SteamProfiles credits={credits} />
-      )}
+      <SteamProfiles credits={credits} />
     </Layout>
   )
 }
