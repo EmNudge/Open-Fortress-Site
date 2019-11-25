@@ -9,13 +9,14 @@ const useCredits = () => {
           name
           roles
           steamID
+          avatar
         }
       }
     }
   `).creditsToml.credits
 
   // making the key the name for each object to be used as a HashMap
-  const credits2DArr = credits.map(({name, desc, roles, steamID}) => [name, { desc, roles, steamID }])
+  const credits2DArr = credits.map(({ name, desc, roles, steamID, avatar }) => [name, { desc, roles, steamID, avatar }])
 
   return new Map(credits2DArr);
 }

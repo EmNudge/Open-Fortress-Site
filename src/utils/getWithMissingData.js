@@ -1,4 +1,4 @@
-const useSteamAPI = async credits => {
+const useSteamAPI = async (credits, avatars) => {
   console.log('CALLING API')
   // WE MUST CLONE THIS
   // or else useState won't see a change and it won't rerender children
@@ -30,10 +30,21 @@ const useSteamAPI = async credits => {
   })
   const res = await resObj.json()
   
+  for (const [name, meta] of newCredits) {
+    if (!meta.avatar) continue;
+
+    // file name without extension
+    const fileName = meta.avatar.split('.')[0]
+    // get the file location if one is specified
+    meta.avatar = avatars.get(fileName)
+    newCredits.set(name, meta);
+  }
+
   // inserting avatar for every steamID found
   for (const [name, id] of steamIDsMap) {
     const player = res.players.find(player => player.steamID === id)
     const newObj = newCredits.get(name)
+    // get API profile if steam ID is there
     if (!newObj.avatar) newObj.avatar = player.profileSmall
     if (!newObj.name) newObj.name = player.name
     
