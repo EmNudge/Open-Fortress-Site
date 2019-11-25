@@ -49,7 +49,7 @@ name = "Nopey Nope"
 roles = ["Programming"]
 
 [[credits]]
-name = "Swox"
+name = "swox"
 roles = ["Programming"]
 
 [[credits]]
@@ -63,9 +63,10 @@ roles = ["Voice Acting", "Modeling"]
 desc = "TFC Soldier and Engineer voice actor. TFC Spy Model."
 
 [[credits]]
-name = "EverMatt"
+name = "EverBruh"
 roles = ["Voice Acting"]
 desc = "TFC Scout voice actor"
+avatar = "bruh.png"
 
 [[credits]]
 name = "Meta"

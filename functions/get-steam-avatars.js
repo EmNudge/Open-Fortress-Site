@@ -15,8 +15,10 @@ exports.handler = async event => {
     name: player.personaname,
     steamID: player.steamid,
     state: player.personastate,
+    profileSmall: player.avatar,
     profileLarge: player.avatarfull,
     profileMedium: player.avatarmedium,
+    customUrl: player.profileurl,
   }))
 
   return {

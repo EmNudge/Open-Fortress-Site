@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import useCredits from "../hooks/useCredits"
-import getWithAvatars from "../utils/getWithAvatars"
+import getWithMissingData from "../utils/getWithMissingData"
 import SteamProfiles from "../components/steamProfiles"
 
 const Credits = () => {
@@ -11,7 +11,7 @@ const Credits = () => {
 
   React.useEffect(() => {
     (async () => {
-      const newCredits = await getWithAvatars(credits);
+      const newCredits = await getWithMissingData(credits);
       setCredits(newCredits);
     })()
   }, [])

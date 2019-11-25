@@ -33,7 +33,10 @@ const useSteamAPI = async credits => {
   // inserting avatar for every steamID found
   for (const [name, id] of steamIDsMap) {
     const player = res.players.find(player => player.steamID === id)
-    const newObj = {...newCredits.get(name), avatar: player.profileLarge}
+    const newObj = newCredits.get(name)
+    if (!newObj.avatar) newObj.avatar = player.profileSmall
+    if (!newObj.name) newObj.name = player.name
+    
     newCredits.set(name, newObj)
   }
 

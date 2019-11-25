@@ -3,8 +3,8 @@
   color: #B943FF;
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-gap: 20px;
-  padding: 10px;
+  grid-gap: 15px;
+  padding: 5px;
   max-width: 400px;
   border-radius: 8px;
 
@@ -21,14 +21,14 @@
     justify-content: center;
 
     border: 2px solid #B943FF;
-    border-radius: 8px;
+    border-radius: 4px;
     overflow: hidden;
-    width: 80px;
-    height: 80px;
+    width: 40px;
+    height: 40px;
     background: #222;
     
     img {
-      height: 80px;
+      height: 40px;
       animation: 1s fade-in;
       @keyframes fade-in {
         from { opacity: 0; }
@@ -39,20 +39,25 @@
     span {
       user-select: none;
       color: white;
-      font-size: 3em;
+      font-size: 1.5em;
     }
   }
 
   .text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-size: .7em;
-    line-height: 1.2em;
-    padding: 5px 0;
-
-    h3 {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    font-size: 18px;
+    
+    h2 {
       font-size: 1em;
+      line-height: 18px;
+      color: #dda4ff;
+    }
+    .roles {
+      font-size: 12px;
+      line-height: 12px;
+      display: flex;
+      align-items: center;
     }
   }
 

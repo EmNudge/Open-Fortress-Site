@@ -22,7 +22,9 @@ const SteamProfile = ({ name, roles, avatar, desc, onClick, isSelected }) => {
 			) : (
 				<div className="text">
 					<h2>{name}</h2>
-					<h3>{getRoles(roles)}</h3>
+					<div className="roles">
+						<span>{getRoles(roles)}</span>
+					</div>
 				</div>
 			)}
 		</div>
