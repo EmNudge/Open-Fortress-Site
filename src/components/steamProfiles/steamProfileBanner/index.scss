@@ -11,12 +11,23 @@
   .avatar {
     display: flex;
     align-items: center;
+    justify-content: center;
+
     border: 2px solid #B943FF;
     border-radius: 8px;
     overflow: hidden;
-
+    width: 80px;
+    height: 80px;
+    background: #222;
+    
     img {
       height: 80px;
+    }
+    
+    span {
+      user-select: none;
+      color: white;
+      font-size: 3em;
     }
   }
 

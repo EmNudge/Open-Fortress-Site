@@ -11,15 +11,10 @@ const SteamProfile = ({ name, roles, avatar, desc }) => {
       return str + ", and "
     }, "")
 
-  const getPic = avatar => {
-    if (avatar) return avatar;
-    return "https://icon-library.net/images/steam-question-mark-icon/steam-question-mark-icon-29.jpg"
-  }
-
   return (
     <div className="steam-profile">
       <div className="avatar">
-        <img src={getPic(avatar)} alt={name} />
+        {avatar ? <img src={avatar} alt={name} /> : <span>?</span>}
       </div>
       <div className="text">
         <h2>{name}</h2>
