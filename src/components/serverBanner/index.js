@@ -1,39 +1,31 @@
 import React from "react"
-import Img from "gatsby-image"
-import useIcons from "../../hooks/useIcons"
-import "./index.scss"
+import './index.scss'
+import ServerBanner from './serverBanner'
 
-const ServerBanner = ({ ip, port, name, playerNum, playerMax, map, fluid }) => {
-  console.log(useIcons(["people", 'monitor']))
-  const [people, monitor] = useIcons(["people", 'monitor']);
+const ServersContainer = ({ servers, images }) => {
+    const getServers = () => {
+        if (!servers.length) {
+            return (
+                <div style={{ display: "flex", justifyContent: "center", marginTop: 100 }}>
+                    <h2 style={{ fontWeight: 100 }}>No servers matched your filter.</h2>
+                </div>
+            )
+        }
 
-  return (
-    <div className="server-banner">
-      <h1>{name}</h1>
-      <span>{map}</span>
-      <div className="meta">
-        <span>
-          <img src={people.publicURL} alt="person"/>
-        </span>
-        <span>
-          {playerNum} / {playerMax}
-        </span>
+        return servers.map(server => (
+            <ServerBanner
+                key={`${server.ip}:${server.port}`}
+                {...server}
+                fluid={images.get(server.map)}
+            />
+        ))
+    }
 
-        <span>
-          <img src={monitor.publicURL} alt="computer"/>
-        </span>
-        <span>
-          {ip}:{port}
-        </span>
-      </div>
-      <a href={`steam://connect/${ip}:${port}`} alt="connect to server">
-        Connect To Server
-      </a>
-      <div className="image">
-        <Img fluid={fluid} />
-      </div>
-    </div>
-  )
+    return (
+        <div className="servers-container">
+            {getServers()}
+        </div>
+    )
 }
 
-export default ServerBanner
+export default ServersContainer;

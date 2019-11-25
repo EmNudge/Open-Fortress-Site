@@ -13,7 +13,10 @@ const useIcons = names => {
     }
   `).allFile.nodes
 
-  return icons.filter(iconObj => names.includes(iconObj.name))
+  const filteredIcons = icons.filter(iconObj => names.includes(iconObj.name))
+  const iconMap = new Map(filteredIcons.map(iconObj => [iconObj.name, iconObj.publicURL]))
+  
+  return iconMap
 }
 
 export default useIcons

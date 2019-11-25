@@ -1,43 +1,5 @@
-.server-banner {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-  background: linear-gradient(to right, #111, #111a);
-  padding: 30px 60px;
-  margin: 20px 0;
-
-  position: relative;
-  overflow: hidden;
-  line-height: 2em;
-
-  .meta {
-    margin-top: 20px;
+.servers-container {
     display: grid;
-    grid-template-columns: auto 1fr;
-    grid-gap: 10px;
-
-    img {
-      height: 20px;
-    }
-  }
-
-  h1 {
-    font-size: 1.5em;
-  }
-
-  a {
-    background: #3d224a;
-    padding: 10px 40px;
-    font-size: 1.25em;
-    color: white;
-  }
-
-  .image {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    z-index: -1;
-  }
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
 }

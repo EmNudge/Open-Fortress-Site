@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 
 import useMapThumbs from "../hooks/useMapThumbs"
 
-import ServerBanner from "../components/serverBanner"
+import ServersContainer from "../components/serverBanner"
 import FilterOptions from "../components/filterOptions"
 import LoadingIcon from "../components/loadingIcon"
 
@@ -17,7 +17,7 @@ const ServersPage = () => {
   const [filters, setFilters] = React.useState({})
 
   React.useEffect(() => {
-    ;(async () => {
+    ; (async () => {
       const querySnapshot = await db
         .collection("servers")
         .where("playerMax", ">", 0)
@@ -52,30 +52,19 @@ const ServersPage = () => {
   }
 
   const getServersComponent = servers => {
-    if (!servers.length)
+    if (!servers.length) {
       return (
         <div style={{ display: "flex", justifyContent: "center" }}>
           <LoadingIcon />
         </div>
       )
+    }
 
     const filteredServers = getFilteredServers(servers)
-    if (filteredServers.length)
-      return filteredServers.map(server => (
-        <ServerBanner
-          key={`${server.ip}:${server.port}`}
-          {...server}
-          fluid={mapsMap.get(server.map)}
-        />
-      ))
-
-    return (
-      <div
-        style={{ display: "flex", justifyContent: "center", marginTop: 100 }}
-      >
-        <h2 style={{ fontWeight: 100 }}>No servers matched your filter.</h2>
-      </div>
-    )
+    return <ServersContainer
+      servers={filteredServers}
+      images={mapsMap}
+    />
   }
 
   return (

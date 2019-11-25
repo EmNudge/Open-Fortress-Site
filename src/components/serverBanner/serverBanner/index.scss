@@ -1,0 +1,42 @@
+.server-banner {
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+  grid-gap: 20px;
+
+  background: linear-gradient(to right, #111, #111a);
+  padding: 20px 40px;
+
+  position: relative;
+  overflow: hidden;
+  line-height: 2em;
+  font-size: .55em;
+
+  .meta {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 10px;
+
+    img {
+      height: 20px;
+    }
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  a {
+    background: #3d224a;
+    padding: 10px 40px;
+    font-size: 1.25em;
+    color: white;
+  }
+
+  .image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: -1;
+  }
+}
