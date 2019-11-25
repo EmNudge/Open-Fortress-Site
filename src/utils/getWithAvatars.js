@@ -23,15 +23,19 @@ const useSteamAPI = async credits => {
     body,
   })
   const res = await resObj.json()
-
+  
+  // WE MUST CLONE THIS
+  // or else useState won't see a change and it won't rerender children
+  const newCredits = new Map(credits)
+  
   // inserting avatar for every steamID found
   for (const [name, id] of steamIDsMap) {
     const player = res.players.find(player => player.steamID === id)
-    const newObj = {...credits.get(name), avatar: player.profileLarge}
-    credits.set(name, newObj)
+    const newObj = {...newCredits.get(name), avatar: player.profileLarge}
+    newCredits.set(name, newObj)
   }
 
-  return credits;
+  return newCredits;
 }
 
 export default useSteamAPI
