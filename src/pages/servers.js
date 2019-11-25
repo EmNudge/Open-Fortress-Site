@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 
 import useMapThumbs from "../hooks/useMapThumbs"
 
-import ServersContainer from "../components/serverBanner"
+import ServersContainer from "../components/serversContainer"
 import FilterOptions from "../components/filterOptions"
 import LoadingIcon from "../components/loadingIcon"
 
