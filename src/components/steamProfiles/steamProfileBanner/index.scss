@@ -8,6 +8,13 @@
   max-width: 400px;
   border-radius: 8px;
 
+  border: 1px solid #B943FF00;
+  transition: .15s;
+  &:hover {
+    border: 1px solid #B943FF;
+    cursor: pointer;
+  }
+
   .avatar {
     display: flex;
     align-items: center;
@@ -46,6 +53,25 @@
 
     h3 {
       font-size: 1em;
+    }
+  }
+
+  .description {
+    font-size: .8em;
+    line-height: 1.2em;
+
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-gap: 5px;
+
+    h2 {
+      font-size: 1em;
+    }
+    p {
+      font-size: .8em;
+      margin: 0;
+      overflow-y: scroll;
+      max-height: 50px;
     }
   }
 }

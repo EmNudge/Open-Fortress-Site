@@ -1,4 +1,10 @@
 const useSteamAPI = async credits => {
+  console.log('CALLING API')
+  // WE MUST CLONE THIS
+  // or else useState won't see a change and it won't rerender children
+  // or useEffect will be in a crazy loop. Either way - bad.
+  const newCredits = new Map(credits)
+  
   const steamIDsMap = new Map()
 
   // collecting steamIDs where they are available
@@ -23,10 +29,6 @@ const useSteamAPI = async credits => {
     body,
   })
   const res = await resObj.json()
-  
-  // WE MUST CLONE THIS
-  // or else useState won't see a change and it won't rerender children
-  const newCredits = new Map(credits)
   
   // inserting avatar for every steamID found
   for (const [name, id] of steamIDsMap) {

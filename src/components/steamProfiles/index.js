@@ -3,10 +3,22 @@ import SteamProfile from "./steamProfileBanner"
 import "./index.scss"
 
 const SteamProfiles = ({ credits, categories }) => {
-  const getSteamProfile = credit => {
+  const [selectedIndex, setSelectedIndex] = React.useState(-1);
+
+  const handleClick = index => {
+    if (selectedIndex === index) {
+      setSelectedIndex(-1);
+      return;
+    }
+    setSelectedIndex(index)
+  }
+
+  const getSteamProfile = (credit, index) => {
     const [name, info] = credit;
     info.name = name;
-    return <SteamProfile key={name} {...info} />
+    info.isSelected = selectedIndex === index
+
+    return <SteamProfile key={name} {...info} onClick={() => handleClick(index)} />
   }
 
   return (

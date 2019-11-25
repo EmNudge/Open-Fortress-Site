@@ -7,15 +7,14 @@ import getWithAvatars from "../utils/getWithAvatars"
 import SteamProfiles from "../components/steamProfiles"
 
 const Credits = () => {
-  const noAvatarCredits = useCredits();
-  const [credits, setCredits] = React.useState(noAvatarCredits)
+  const [credits, setCredits] = React.useState(useCredits())
 
   React.useEffect(() => {
     (async () => {
-      const newCredits = await getWithAvatars(noAvatarCredits);
+      const newCredits = await getWithAvatars(credits);
       setCredits(newCredits);
     })()
-  }, [noAvatarCredits])
+  }, [])
 
   return (
     <Layout>
