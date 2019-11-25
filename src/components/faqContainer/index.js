@@ -1,5 +1,5 @@
 import React from "react"
-import FAQ from "../faq"
+import FAQ from "./faq"
 import "./index.scss"
 
 const FaqContainer = ({ faqs }) => (
