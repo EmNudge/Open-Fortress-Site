@@ -21,6 +21,7 @@
     "gatsby-transformer-json": "^2.2.16",
     "gatsby-transformer-sharp": "^2.3.1",
     "gatsby-transformer-toml": "^2.2.16",
+    "netlify-lambda": "^1.6.3",
     "node-sass": "^4.13.0",
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
@@ -41,7 +42,7 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "lambda": "netlify-lambda build functions"
   },
   "repository": {
     "type": "git",
