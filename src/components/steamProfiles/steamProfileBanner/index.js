@@ -1,6 +1,5 @@
 import React from 'react';
 import Avatar from '../avatar';
-import grammaticalJoin from '../../../utils/grammaticalJoin';
 import './index.scss';
 
 const SteamProfile = ({ name, roles, avatar, desc, onClick, isSelected }) => (
@@ -9,7 +8,7 @@ const SteamProfile = ({ name, roles, avatar, desc, onClick, isSelected }) => (
 		<div className="text">
 			<h2>{name}</h2>
 			<div className="roles">
-				<span>{grammaticalJoin(roles)}</span>
+				<span>{roles.join(', ')}</span>
 			</div>
 		</div>
 	</div>
