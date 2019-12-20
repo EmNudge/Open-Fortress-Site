@@ -1,0 +1,40 @@
+.modal-outer-box {
+    position: fixed;
+    top: 0; left: 0;
+    bottom: 0; right: 0;
+
+    animation: fade-in .25s;
+    @keyframes fade-in {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    background: #000a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .modal {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-gap: 15px;
+
+        background: #000a;
+        padding: 40px 20px;
+        width: 700px;
+        border-radius: 15px;
+
+        h1 {
+            font-size: 1.5em;
+            color: #dda4ff;
+        }
+        h2 {
+            font-size: .9em;
+            font-weight: 500;
+        }
+        p {
+            font-size: .7em;
+            margin-top: 5px;
+        }
+    }
+}
