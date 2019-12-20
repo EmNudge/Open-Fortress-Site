@@ -23,9 +23,11 @@ const SteamProfiles = ({ credits, categories }) => {
 	const getModalData = (index) => [...credits][index][1];
 
 	return (
-		<div className="steam-profile-container">
+    <div className="steam-profile-container">
 			{modalIsActive && <Modal {...getModalData(selectedIndex)} onOutsideClick={() => setModalIsActive(false)} />}
-			{[...credits].map(getSteamProfile)}
+      <div className="profiles">
+        {[...credits].map(getSteamProfile)}
+      </div>
 		</div>
 	);
 };

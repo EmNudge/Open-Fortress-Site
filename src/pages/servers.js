@@ -68,9 +68,8 @@ const ServersPage = () => {
   }
 
   return (
-    <Layout>
+    <Layout title="Official Servers">
       <SEO title="Servers" />
-      <h1>Official Servers</h1>
       <FilterOptions
         onChange={filters => setFilters(filters)}
         filters={filters}

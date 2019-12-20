@@ -5,10 +5,11 @@ import Header from "./header"
 import Footer from './footer'
 import "./layout.scss"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, title }) => {
   return (
     <div className="main">
       <Header />
+      {title && <h1>{title}</h1>}
       <main>{children}</main>
       <Footer />
     </div>

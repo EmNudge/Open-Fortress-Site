@@ -9,9 +9,8 @@ const FaqPage = () => {
   const faqs = useFaq()
 
   return (
-    <Layout>
+    <Layout title="Frequently Asked Questions">
       <SEO title="F.A.Q." />
-      <h1>Frequently Asked Questions</h1>
       <FaqContainer faqs={faqs} />
     </Layout>
   )

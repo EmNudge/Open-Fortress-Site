@@ -19,7 +19,7 @@ const Credits = () => {
   }, [])
 
   return (
-    <Layout>
+    <Layout title="Contributors">
       <SEO title="Credits" />
       <SteamProfiles credits={credits} />
     </Layout>

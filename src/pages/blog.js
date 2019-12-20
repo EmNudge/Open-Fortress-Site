@@ -9,7 +9,7 @@ const BlogPage = () => {
   const posts = usePosts({ type: 'date-ascending' })
 
   return (
-    <Layout>
+    <Layout title="Blog" >
       <SEO title="Blog" />
       <PostContainer posts={posts} />
     </Layout>
