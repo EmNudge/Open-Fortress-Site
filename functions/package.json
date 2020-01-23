@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "gamedig": "^2.0.14",
+    "node-fetch": "^2.6.0"
+  }
+}
