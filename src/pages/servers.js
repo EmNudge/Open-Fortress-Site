@@ -1,5 +1,4 @@
 import React from "react"
-import { db } from "../firebase.js"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -18,13 +17,15 @@ const ServersPage = () => {
 
   React.useEffect(() => {
     ; (async () => {
-      const querySnapshot = await db
-        .collection("servers")
-        .where("playerMax", ">", 0)
-        .get()
-
-      setServers(querySnapshot.docs.map(doc => doc.data()))
-    })()
+      const serversRes = await fetch('/.netlify/functions/get-servers');
+      try {
+        const servers = await serversRes.json()
+        console.log({ servers })
+        setServers(servers)
+      } catch (e) {
+        console.error(e);
+      }
+    })();
   }, [])
 
   const getFilteredServers = servers => {
