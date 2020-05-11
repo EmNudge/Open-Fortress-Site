@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "gamedig": "^2.0.14",
-    "node-fetch": "^2.6.0",
-    "encoding": "0.1.12"
-  }
-}

@@ -21,7 +21,7 @@ const ServersPage = () => {
       try {
         const servers = await serversRes.json()
         console.log({ servers })
-        setServers(servers)
+        setServers(servers.filter(server => server))
       } catch (e) {
         console.error(e);
       }
