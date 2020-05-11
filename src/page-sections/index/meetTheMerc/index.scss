@@ -1,0 +1,28 @@
+.meet-the-merc {
+  h1 {
+    text-align: right;
+    padding-right: 100px;
+  }
+
+  .image-container {
+    background-size: cover;
+    padding: 80px;
+    padding-top: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    height: 650px;
+
+    img {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      z-index: -1;
+    }
+
+    p {
+      margin: 20px 0;
+      line-height: 1.7em;
+    }
+  }
+}

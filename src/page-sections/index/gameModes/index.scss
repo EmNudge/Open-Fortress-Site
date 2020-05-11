@@ -1,0 +1,17 @@
+.game-modes {
+  line-height: 1.7em;
+  display: grid;
+  justify-items: center;
+  margin: 20px 0;
+  margin-top: 100px;
+
+  h1 {
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+
+  p {
+    max-width: 700px;
+    margin: 20px 0;
+  }
+}

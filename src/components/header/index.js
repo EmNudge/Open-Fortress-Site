@@ -6,9 +6,7 @@ import "./index.scss"
 const Header = () => (
   <header>
       <h1 className="brand">
-        <Link
-          to="/"
-        >
+        <Link to="/">
           <img src={MainLogo} alt="main site logo" height="50px" />
         </Link>
       </h1>
