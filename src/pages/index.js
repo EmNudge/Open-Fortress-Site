@@ -8,7 +8,7 @@ import MeetTheMerc from '../page-sections/index/meetTheMerc'
 import GameModes from '../page-sections/index/gameModes'
 
 const IndexPage = () => (
-  <Layout>
+  <Layout page="index">
     <SEO title="Home" />
 
     <About />

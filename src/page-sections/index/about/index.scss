@@ -11,15 +11,15 @@
   }
 
   p {
-    max-width: 700px;
+    max-width: 900px;
   }
 
-  .install-container {
+  .button-container {
     display: flex;
     justify-content: center;
     margin: 40px 0;
 
-    .install-btn {
+    .about-btn {
       background: #592ab3;
       color: white;
   
@@ -31,6 +31,7 @@
   
       img {
         width: 100%;
+        max-height: 30px;
       }
 
       transition: .15s;

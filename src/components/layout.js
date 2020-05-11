@@ -5,9 +5,18 @@ import Header from "./header"
 import Footer from './footer'
 import "./layout.scss"
 
-const Layout = ({ children, title }) => {
+import BG from '../images/bgs/briefcase.png'
+
+const Layout = ({ children, title, page }) => {
+  const style = {
+    backgroundImage: page === 'index' ? `url(${BG})` : '', 
+    backgroundSize: 'contain',
+    backgroundAttachment: 'local',
+    backgroundRepeat: 'no-repeat'
+  }
+
   return (
-    <div className="main">
+    <div className="main" style={style}>
       <Header />
       {title && <h1>{title}</h1>}
       <main>{children}</main>
