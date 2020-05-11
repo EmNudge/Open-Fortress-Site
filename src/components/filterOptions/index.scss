@@ -1,15 +1,26 @@
 .filter-options {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
+  display: grid;
+  justify-items: flex-start;
+  margin: 20px 0;
+  
+  * { font-size: 18px; }
+  
+  button {
+    color: white;
+    background: #714a84;
+    border: none;
+    padding: 10px 20px;
+  }
 
+  .filter-contents {
+    background: #00000026;
+    padding: 20px;
+  }
   label {
     font-size: 1.1em;
   }
   input[type=text] {
     padding: 5px 15px;
-    font-size: 1.25em;
     border: none;
   }
 

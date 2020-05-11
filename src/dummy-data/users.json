@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Alex Episode",
+    "steamID": "76561198080213691",
+    "state": 0,
+    "profileSmall": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/59/59f27ff4904265acb5edc262be7c477920fc93e7.jpg",
+    "profileLarge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/59/59f27ff4904265acb5edc262be7c477920fc93e7_full.jpg",
+    "profileMedium": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/59/59f27ff4904265acb5edc262be7c477920fc93e7_medium.jpg",
+    "customUrl": "https://steamcommunity.com/profiles/76561198080213691/"
+  },
+  {
+    "name": "KaydemonLP The Forest Queen",
+    "steamID": "76561198128576895",
+    "state": 1,
+    "profileSmall": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/7c/7c1078d975f1be94e70800a7457d8fd649684d53.jpg",
+    "profileLarge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/7c/7c1078d975f1be94e70800a7457d8fd649684d53_full.jpg",
+    "profileMedium": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/7c/7c1078d975f1be94e70800a7457d8fd649684d53_medium.jpg",
+    "customUrl": "https://steamcommunity.com/id/KaydemonLP/"
+  },
+  {
+    "name": "Stachekip",
+    "steamID": "76561198006395451",
+    "state": 4,
+    "profileSmall": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/5a/5a37ae4e8f6d6002950d97c47a5936d7eff9ecdb.jpg",
+    "profileLarge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/5a/5a37ae4e8f6d6002950d97c47a5936d7eff9ecdb_full.jpg",
+    "profileMedium": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/5a/5a37ae4e8f6d6002950d97c47a5936d7eff9ecdb_medium.jpg",
+    "customUrl": "https://steamcommunity.com/id/iherduliekmudkips/"
+  },
+  {
+    "name": "AgitationSkeleton",
+    "steamID": "76561198025043579",
+    "state": 0,
+    "profileSmall": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/88/889d15bd46c84d3954dc7d1fefd264ec5533aa65.jpg",
+    "profileLarge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/88/889d15bd46c84d3954dc7d1fefd264ec5533aa65_full.jpg",
+    "profileMedium": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/88/889d15bd46c84d3954dc7d1fefd264ec5533aa65_medium.jpg",
+    "customUrl": "https://steamcommunity.com/id/E1M1Hangar/"
+  }
+]

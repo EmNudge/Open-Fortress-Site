@@ -16,7 +16,7 @@ const ServersContainer = ({ servers, images }) => {
             <ServerBanner
                 key={`${server.ip}:${server.port}`}
                 {...server}
-                fluid={images.get(server.map)}
+                fluid={images.get(server.map) || [...images][0][1]}
             />
         ))
     }

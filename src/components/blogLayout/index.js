@@ -6,11 +6,32 @@ import Footer from "../footer"
 import "../layout.scss"
 import "./index.scss"
 
-const Layout = ({ children }) => {
+import { graphql } from "gatsby"
+
+export const query = graphql`
+  query {
+    file(name: { eq: "person" }) {
+      publicURL
+    }
+  }
+`
+
+const Layout = ({ children, title, icon, author, date }) => {
   return (
     <div className="main blog-post">
       <Header />
-      <main>{children}</main>
+      <main>
+        <div className="meta">
+          <h1>{title}</h1>
+          <h5>
+            <img src={icon} alt="person" />
+            <span>{author}</span>
+            <span>●</span>
+            <span>{date}</span>
+          </h5>
+        </div>
+        <div className="contents">{children}</div>
+      </main>
       <Footer />
     </div>
   )

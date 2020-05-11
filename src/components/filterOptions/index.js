@@ -4,6 +4,7 @@ import "./index.scss"
 const ServerBanner = ({ onChange, filters }) => {
   const [input, setInput] = React.useState("")
   const [hasPlayers, setHasPlayers] = React.useState(false)
+  const [showFilters, setShowFilters] = React.useState(false)
 
   React.useEffect(() => {
     setInput(filters.input || "")
@@ -20,27 +21,36 @@ const ServerBanner = ({ onChange, filters }) => {
     onChange({ input, hasPlayers: e.target.checked })
   }
 
+  const toggleFilters = () => {
+    setShowFilters(!showFilters)
+  }
+
   return (
     <div className="filter-options">
-      <div className="text-filter-container">
-        <label htmlFor="server-filter">Filter Servers</label>
-        <input
-          type="text"
-          id="server-filter"
-          placeholder="filter servers"
-          value={input}
-          onChange={inputChange}
-        />
-      </div>
-      <div className="checkbox-container">
-        <label htmlFor="has-players">Non-empty servers</label>
-        <input
-          id="has-players"
-          type="checkbox"
-          value={hasPlayers}
-          onChange={checkboxChange}
-        />
-      </div>
+      <button onClick={toggleFilters}>Filters...</button>
+      {showFilters &&
+        <div className="filter-contents">
+          <div className="text-filter-container">
+            <label htmlFor="server-filter">Filter Servers</label>
+            <input
+              type="text"
+              id="server-filter"
+              placeholder="filter servers"
+              value={input}
+              onChange={inputChange}
+            />
+          </div>
+          <div className="checkbox-container">
+            <label htmlFor="has-players">Hide Empty Servers</label>
+            <input
+              id="has-players"
+              type="checkbox"
+              value={hasPlayers}
+              onChange={checkboxChange}
+            />
+          </div>
+        </div>
+        }
     </div>
   )
 }

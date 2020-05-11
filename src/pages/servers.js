@@ -9,6 +9,10 @@ import ServersContainer from "../components/serversContainer"
 import FilterOptions from "../components/filterOptions"
 import LoadingIcon from "../components/loadingIcon"
 
+import serversData from '../dummy-data/servers.json';
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
 const ServersPage = () => {
   const mapsMap = useMapThumbs()
 
@@ -16,16 +20,22 @@ const ServersPage = () => {
   const [filters, setFilters] = React.useState({})
 
   React.useEffect(() => {
+    // ; (async () => {
+    //   const serversRes = await fetch('/.netlify/functions/get-servers');
+    //   try {
+    //     const servers = await serversRes.json()
+    //     console.log({ servers })
+    //     setServers(servers.filter(server => server))
+    //   } catch (e) {
+    //     console.error(e);
+    //   }
+    // })();
     ; (async () => {
-      const serversRes = await fetch('/.netlify/functions/get-servers');
-      try {
-        const servers = await serversRes.json()
-        console.log({ servers })
-        setServers(servers.filter(server => server))
-      } catch (e) {
-        console.error(e);
-      }
-    })();
+      const goodServers = serversData.filter(server => server);
+      console.log({ goodServers })
+      await sleep(1000)
+      setServers(goodServers);
+    })()
   }, [])
 
   const getFilteredServers = servers => {

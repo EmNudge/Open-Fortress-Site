@@ -1,13 +1,20 @@
-main  {
+.blog-post main  {
   font-size: 21px;
   line-height: 1.8em;
+  max-width: 700px;
 
   p {
     margin: 20px 0;
   }
 
-  > .meta {
+  display: grid;
+  // justify-items: center;
+  .meta {
     padding-bottom: 40px;
+
+    h1 {
+      line-height: 1.2em;
+    }
 
     h5 {
       display: grid;

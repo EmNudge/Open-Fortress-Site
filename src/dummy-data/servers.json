@@ -1,0 +1,319 @@
+[
+  {
+    "ip": "69.195.157.243",
+    "port": "27015",
+    "name": "[US-Central] www.openfortress.fun - Deathmatch #1",
+    "map": "dm_bloodrun",
+    "playerMax": 12,
+    "playerNum": 0,
+    "players": []
+  },
+  {
+    "ip": "69.195.157.243",
+    "port": "27016",
+    "name": "[US-Central] www.openfortress.fun - Deathmatch #2",
+    "map": "dm_wiseau",
+    "playerMax": 12,
+    "playerNum": 0,
+    "players": []
+  },
+  {
+    "ip": "69.195.157.243",
+    "port": "27017",
+    "name": "[US-Central] www.openfortress.fun - Deathmatch #3",
+    "map": "dm_sawdust",
+    "playerMax": 12,
+    "playerNum": 0,
+    "players": []
+  },
+  {
+    "ip": "69.195.157.243",
+    "port": "27018",
+    "name": "[US-Central] www.openfortress.fun - Deathmatch #4",
+    "map": "dm_knoxx",
+    "playerMax": 12,
+    "playerNum": 0,
+    "players": []
+  },
+  {
+    "ip": "69.195.157.243",
+    "port": "27115",
+    "name": "[US-Central] www.openfortress.fun - Deathmatch + Bots",
+    "map": "dm_bloodrun",
+    "playerMax": 24,
+    "playerNum": 0,
+    "players": []
+  },
+  {
+    "ip": "69.195.157.243",
+    "port": "27023",
+    "name": "[US-Central] www.openfortress.fun - Team Deathmatch",
+    "map": "dm_knoxx",
+    "playerMax": 24,
+    "playerNum": 0,
+    "players": []
+  },
+  {
+    "ip": "69.195.157.243",
+    "port": "27119",
+    "name": "[US-Central] www.openfortress.fun - Team Deathmatch + Bots",
+    "map": "mctf_doublecross",
+    "playerMax": 24,
+    "playerNum": 0,
+    "players": []
+  },
+  {
+    "ip": "69.195.157.243",
+    "port": "27019",
+    "name": "[US-Central] www.openfortress.fun - All-Class Deathmatch",
+    "map": "dm_skate",
+    "playerMax": 24,
+    "playerNum": 0,
+    "players": []
+  },
+  {
+    "ip": "69.195.157.243",
+    "port": "27116",
+    "name": "[US-Central] www.openfortress.fun - Arsenal Mode #1",
+    "map": "dm_coaltown",
+    "playerMax": 24,
+    "playerNum": 18,
+    "players": [
+      { "name": "Lord of the *dies*", "score": 2, "time": 4775.5126953125 },
+      { "name": "Hogyn Melyn", "score": 22, "time": 3057.654541015625 },
+      { "name": "dembo", "score": 26, "time": 2626.122802734375 },
+      { "name": "Darcade", "score": 16, "time": 2607.38232421875 },
+      { "name": "Doremy", "score": 21, "time": 2195.698974609375 },
+      { "name": "☣MIRA4N3☣", "score": 15, "time": 2129.65380859375 },
+      { "name": "Bowl Salesman", "score": 22, "time": 1404.0999755859375 },
+      { "name": "thoomin", "score": 31, "time": 818.7637329101562 },
+      { "name": "ThunderBoltBuddah", "score": 21, "time": 713.4848022460938 },
+      { "name": "skriibz", "score": 23, "time": 669.0248413085938 },
+      { "name": "Marioiscool246", "score": 19, "time": 651.95361328125 },
+      { "name": "All_RyT", "score": 18, "time": 631.0140991210938 },
+      { "name": "Shrek_Boi", "score": 14, "time": 625.2090454101562 },
+      { "name": "CharaZX", "score": 4, "time": 554.6853637695312 },
+      { "name": "aTempo", "score": 0, "time": 535.1841430664062 },
+      { "name": "Master of Yolo", "score": 17, "time": 401.87884521484375 },
+      { "name": "PROF", "score": 5, "time": 330.4783630371094 },
+      { "name": "Rascow Linnx", "score": 7, "time": 193.320068359375 }
+    ]
+  },
+  {
+    "ip": "69.195.157.243",
+    "port": "27027",
+    "name": "[US-Central] www.openfortress.fun - Capture the Flag",
+    "map": "mctf_backfort",
+    "playerMax": 24,
+    "playerNum": 0,
+    "players": []
+  },
+  null,
+  {
+    "ip": "69.195.157.243",
+    "port": "27031",
+    "name": "[US-Central] www.openfortress.fun - Gun Game",
+    "map": "dm_crossfire",
+    "playerMax": 24,
+    "playerNum": 0,
+    "players": []
+  },
+  {
+    "ip": "69.195.157.243",
+    "port": "27032",
+    "name": "[US-Central] www.openfortress.fun - Gun Game + Bots",
+    "map": "dm_harvest",
+    "playerMax": 24,
+    "playerNum": 0,
+    "players": []
+  },
+  {
+    "ip": "69.195.157.243",
+    "port": "27024",
+    "name": "[US-Central] www.openfortress.fun - Infection",
+    "map": "dm_chestnut",
+    "playerMax": 24,
+    "playerNum": 0,
+    "players": []
+  },
+  {
+    "ip": "69.195.157.243",
+    "port": "27120",
+    "name": "[US-Central] www.openfortress.fun - Infection + Bots",
+    "map": "dm_offblast",
+    "playerMax": 24,
+    "playerNum": 0,
+    "players": []
+  },
+  {
+    "ip": "69.195.157.243",
+    "port": "27020",
+    "name": "[US-Central] www.openfortress.fun - Instagib",
+    "map": "dm_lumberyard",
+    "playerMax": 24,
+    "playerNum": 0,
+    "players": []
+  },
+  {
+    "ip": "69.195.157.243",
+    "port": "27117",
+    "name": "[US-Central] www.openfortress.fun - Instagib + Bots",
+    "map": "dm_lumberyard",
+    "playerMax": 24,
+    "playerNum": 0,
+    "players": []
+  },
+  {
+    "ip": "69.195.157.243",
+    "port": "27029",
+    "name": "[US-Central] www.openfortress.fun - Randomizer",
+    "map": "dm_backfort",
+    "playerMax": 24,
+    "playerNum": 0,
+    "players": []
+  },
+  {
+    "ip": "69.195.157.243",
+    "port": "27030",
+    "name": "[US-Central] www.openfortress.fun - Randomizer + Bots",
+    "map": "dm_gump",
+    "playerMax": 24,
+    "playerNum": 0,
+    "players": []
+  },
+  {
+    "ip": "69.195.157.243",
+    "port": "27022",
+    "name": "[US-Central] www.openfortress.fun - Rocket Arena",
+    "map": "dm_sawdust",
+    "playerMax": 24,
+    "playerNum": 0,
+    "players": []
+  },
+  {
+    "ip": "69.195.157.243",
+    "port": "27118",
+    "name": "[US-Central] www.openfortress.fun - Rocket Arena + Bots",
+    "map": "dm_2fort",
+    "playerMax": 24,
+    "playerNum": 0,
+    "players": []
+  },
+  {
+    "ip": "69.195.157.243",
+    "port": "27021",
+    "name": "[US-Central] www.openfortress.fun - Unholy Trinity",
+    "map": "dm_bloodrun",
+    "playerMax": 24,
+    "playerNum": 0,
+    "players": []
+  },
+  {
+    "ip": "192.223.30.12",
+    "port": "27015",
+    "name": "[US-Chicago] www.openfortress.fun - Deathmatch (Fraglimit 50)",
+    "map": "dm_skate",
+    "playerMax": 24,
+    "playerNum": 0,
+    "players": []
+  },
+  {
+    "ip": "192.223.30.12",
+    "port": "27215",
+    "name": "[US-Chicago] www.openfortress.fun - Instagib",
+    "map": "dm_longestyard",
+    "playerMax": 24,
+    "playerNum": 0,
+    "players": []
+  },
+  {
+    "ip": "192.223.30.12",
+    "port": "27115",
+    "name": "[US-Chicago] www.openfortress.fun - Unholy Trinity",
+    "map": "dm_bloodrun",
+    "playerMax": 24,
+    "playerNum": 0,
+    "players": []
+  },
+  {
+    "ip": "66.229.12.247",
+    "port": "27777",
+    "name": "[US-East] www.openfortress.fun - Deathmatch",
+    "map": "dm_crossfire",
+    "playerMax": 24,
+    "playerNum": 0,
+    "players": []
+  },
+  {
+    "ip": "66.229.12.247",
+    "port": "27965",
+    "name": "[US-East] www.openfortress.fun - All-Class Deathmatch",
+    "map": "mctf_backfort",
+    "playerMax": 24,
+    "playerNum": 0,
+    "players": []
+  },
+  {
+    "ip": "66.229.12.247",
+    "port": "27961",
+    "name": "[US-East] www.openfortress.fun - Infection",
+    "map": "dm_knoxx",
+    "playerMax": 24,
+    "playerNum": 0,
+    "players": []
+  },
+  {
+    "ip": "66.229.12.247",
+    "port": "27884",
+    "name": "[US-East] www.openfortress.fun - All-Class Infection",
+    "map": "dm_knoxx",
+    "playerMax": 24,
+    "playerNum": 0,
+    "players": []
+  },
+  {
+    "ip": "66.229.12.247",
+    "port": "25588",
+    "name": "[US-East] www.openfortress.fun - Bot Testing",
+    "map": "dm_harvest",
+    "playerMax": 24,
+    "playerNum": 0,
+    "players": []
+  },
+  {
+    "ip": "66.229.12.247",
+    "port": "27016",
+    "name": "[US-East] www.openfortress.fun - All-Class Bot Testing",
+    "map": "dm_gump",
+    "playerMax": 24,
+    "playerNum": 0,
+    "players": []
+  },
+  {
+    "ip": "66.229.12.247",
+    "port": "27626",
+    "name": "[US-East] www.openfortress.fun - Infection Bot Testing",
+    "map": "dm_bloodcovenant",
+    "playerMax": 24,
+    "playerNum": 1,
+    "players": [{ "name": "g-man", "score": 11, "time": 360.394287109375 }]
+  },
+  {
+    "ip": "66.229.12.247",
+    "port": "27090",
+    "name": "[US-East] www.openfortress.fun - Under Construction Maps",
+    "map": "dm_overkill_dev",
+    "playerMax": 24,
+    "playerNum": 0,
+    "players": []
+  },
+  {
+    "ip": "66.229.12.247",
+    "port": "22007",
+    "name": "[US-East] www.openfortress.fun - Developer Server",
+    "map": "dm_databank",
+    "playerMax": 24,
+    "playerNum": 0,
+    "players": []
+  }
+]

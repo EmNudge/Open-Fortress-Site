@@ -27,16 +27,7 @@ const PostTemplate = ({ data }) => {
   const date = formatDate(created, true)
 
   return (
-    <BlogLayout>
-      <div className="meta">
-        <h1>{title}</h1>
-        <h5>
-          <img src={icon} alt="person" />
-          <span>{author}</span>
-          <span>●</span>
-          <span>{date}</span>
-        </h5>
-      </div>
+    <BlogLayout title={title} icon={icon} author={author} date={date} >
       <MDXRenderer>{data.mdx.body}</MDXRenderer>
     </BlogLayout>
   )

@@ -1,3 +1,6 @@
+
+import players from '../dummy-data/users.json'
+
 const useSteamAPI = async (credits, avatars) => {
 	console.log('CALLING API');
 	// WE MUST CLONE THIS
@@ -20,15 +23,15 @@ const useSteamAPI = async (credits, avatars) => {
 	const steamIDs = [...steamIDsMap.values()];
 	const body = JSON.stringify({ steamIDs });
 
-	const resObj = await window.fetch('/.netlify/functions/get-steam-avatars', {
-		method: 'POST',
-		headers: {
-			Accept: 'application/json',
-			'Content-Type': 'application/json'
-		},
-		body
-	});
-	const res = await resObj.json();
+	// const resObj = await window.fetch('/.netlify/functions/get-steam-avatars', {
+	// 	method: 'POST',
+	// 	headers: {
+	// 		Accept: 'application/json',
+	// 		'Content-Type': 'application/json'
+	// 	},
+	// 	body
+	// });
+	// const res = await resObj.json();
 
 	for (const [name, meta] of newCredits) {
 		if (!meta.avatar) continue;
@@ -42,7 +45,7 @@ const useSteamAPI = async (credits, avatars) => {
 
 	// inserting avatar for every steamID found
 	for (const [name, id] of steamIDsMap) {
-		const player = res.players.find((player) => player.steamID === id);
+		const player = players.find((player) => player.steamID === id);
 		const newObj = newCredits.get(name);
 		// get API profile if steam ID is there
 		if (!newObj.avatar) {
