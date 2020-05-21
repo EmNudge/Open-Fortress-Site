@@ -49,6 +49,10 @@ name = "Nopey Nope"
 roles = ["Programming"]
 
 [[credits]]
+name = "Terradice"
+roles = ["Programming"]
+
+[[credits]]
 name = "swox"
 roles = ["Programming"]
 
