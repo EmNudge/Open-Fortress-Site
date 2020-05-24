@@ -11,10 +11,10 @@ const GameModes = () => (
         <div className="text">
           <h1>Game Modes</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos saepe accusantium in. Enim, eos! Officiis atque quidem natus soluta voluptates velit aliquam impedit exercitationem? Veritatis quos vitae perferendis cupiditate fugit?
+            Open Fortress provides a fast-paced Arena FPS styled Deathmatch mode, paying homage to Team Fortress's roots with frantic free-for-all action. From classic weapon pickups to Earth-shattering powerups, Deathmatch is an addictive gamemode that's fun to jump into and even more fun to master.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos saepe accusantium in. Enim, eos! Officiis atque quidem natus soluta voluptates velit aliquam impedit exercitationem? Veritatis quos vitae perferendis cupiditate fugit?
+            Numerous team-based and 'mutator' modes also accompany Deathmatch. Team Deathmatch, Zombie Infection, Instagib and more await you in the arena!
           </p>
         </div>
       </div>

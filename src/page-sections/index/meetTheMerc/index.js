@@ -1,11 +1,20 @@
 import React from 'react'
 import MercImage  from '../../../images/merc.png'
+import MercImageMobile  from '../../../images/merc_mobile.png'
+import BloodBrush  from '../../../images/bgs/blood_brush.png'
 import './index.scss'
 
 const MeetTheMerc = () => (
   <div className="meet-the-merc">
-    <h1>Meet The Merc</h1>
-    <div className="image-container" style={{ backgroundImage: `url(${MercImage})` }}>
+    <div className="title-container">
+      <div className="blood-brush" style={{ backgroundImage: `url(${BloodBrush})` }}></div>
+      <h1>Meet The Merc</h1>
+    </div>
+
+    <div className="image-container">
+      <div className="desktop-image" style={{ backgroundImage: `url(${MercImage})` }}></div>
+      <div className="mobile-image" style={{ backgroundImage: `url(${MercImageMobile})` }}></div>
+
       <div className="empty"></div>
       <div className="content">
         <p>
