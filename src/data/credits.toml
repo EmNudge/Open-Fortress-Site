@@ -1,19 +1,55 @@
 [[credits]]
 name = "KaydemonLP"
 roles = ["Project Lead", "Programming"]
-desc = "New Mercenary gloves, Concept Animation."
+desc = "Founder of the project and lead programmer."
 steamID = "76561198128576895"
 
 [[credits]]
 name = "AgitationSkeleton"
 roles = ["Gameplay Coordinator"]
+desc = "Lead gameplay director for Deathmatch, community manager & administrator for official game servers."
 steamID = "76561198025043579"
 
 [[credits]]
 name = "Stachekip"
 roles = ["Gameplay Coordinator", "Voice Acting", "Sound Design"]
-desc = "Voice Acting for Mercenary"
+desc = "Voice of the Mercenary, Lead gameplay director of TFC Mode & Co-lead of Deathmatch gameplay."
 steamID = "76561198006395451"
+
+[[credits]]
+name = "DrPyspy"
+roles = ["Gameplay Coordinator", "Concept Art"]
+desc = "Mercenary concept art & early model, Co-lead gameplay director of TFC Mode, concept artist for TFC classes and the Railgun."
+steamID = "76561198025334020"
+
+[[credits]]
+name = "Ficool2"
+roles = ["Programming", "Animation"]
+desc = "Integrated TFBots with the help of Deathreus from TF2Vintage, implemented the enhanced gore & gibbing system and did thirdperson animations for the Mercenary."
+steamID = "76561198013541469"
+
+[[credits]]
+name = "Alaxe"
+roles = ["Modelling"]
+desc = "Finalized Mercenary character model"
+steamID = "76561198179600693"
+
+[[credits]]
+name = "EmNudge"
+roles = ["Website"]
+desc = "Web design"
+steamID = "76561198095055365"
+
+[[credits]]
+name = "Kyle"
+roles = ["Website", "SVN"]
+desc = "SVN Host & Site Admin"
+steamID = "76561198061175832"
+
+[[credits]]
+name = "Nopey Nope"
+roles = ["Programming", "SVN", "Website"]
+desc = "Linux debugging and opitmization as well as SVN administration and server hosting."
 
 [[credits]]
 name = "Alex Episode"
@@ -23,105 +59,283 @@ steamID = "76561198080213691"
 [[credits]]
 name = "MaartenS11"
 roles = ["Programming"]
+desc = "Implemented logic for Team Deathmatch mode."
+steamID = "76561198159282409"
 
 [[credits]]
-name = "Rara Cerberus"
+name = "Rara"
 roles = ["Programming"]
-
-[[credits]]
-name = "Chrissy"
-roles = ["Programming"]
-
-[[credits]]
-name = "Jill Nesbit"
-roles = ["Programming"]
-
-[[credits]]
-name = "Nbc66"
-roles = ["Programming"]
+desc = "Implemented jump pads & c_model viewmodels, and laid the foundation for the upcoming TFC Mode."
+steamID = "76561198095040360"
 
 [[credits]]
 name = "Avast Antipony"
 roles = ["Programming"]
-
-[[credits]]
-name = "Nopey Nope"
-roles = ["Programming"]
+desc = "Security fixes"
+steamID = "76561197992046533"
 
 [[credits]]
 name = "Terradice"
+desc = "Linux debugging and optimization"
 roles = ["Programming"]
+steamID = "76561198399916290"
 
 [[credits]]
 name = "swox"
 roles = ["Programming"]
-
-[[credits]]
-name = "Ficool2"
-roles = ["Programming", "Animation"]
-desc = "Animation Fixes, Original Akimbo Animations, Original Mercenary Gloves, Higher Poly version of the new gloves"
+desc = "Implemented Threewave grappling hook & various code fixes and viewmodel fixes."
+steamID = "76561198116553704"
 
 [[credits]]
 name = "Drew"
 roles = ["Voice Acting", "Modeling"]
-desc = "TFC Soldier and Engineer voice actor. TFC Spy Model."
+desc = "Soldier and Engineer additional voice acting, Deathmatch & TFC cosmetics and weapons, TFC Spy character model, voice of TFC Soldier & Spy."
+steamID = "76561198011507712"
 
 [[credits]]
-name = "EverBruh"
+name = "EverMatt"
 roles = ["Voice Acting"]
 desc = "Additional TF2 Scout voice lines"
-avatar = "bruh.png"
+steamID = "76561198062722856"
 
 [[credits]]
 name = "Meta"
-roles = ["Voice Acting", "Sound Design"]
-desc = "TFC Demoman voice actor"
+roles = ["Voice Acting", "Sound Design", "Music"]
+desc = "TFC Demoman voice actor & Deathmatch music, HECU Deathmatch announcer, Music [Open Hazards]"
+steamID = "76561198219035087"
 
 [[credits]]
 name = "Benjamin Rudman"
 roles = ["Voice Acting"]
-desc = "Civillian announcer"
+desc = "Multiple Deathmatch announcers (Default, TF2Classic Civilian, Tiny Heavy, etc.), voice of TFC Civilian"
+steamID = "76561198014717105"
 
 [[credits]]
 name = "Tyler McVicker"
 roles = ["Voice Acting"]
-desc = "Joke announcer for xxxx"
+desc = "Bonus announcer pack for Deathmatch"
+steamID = "76561198025749276"
 
 [[credits]]
 name = "Omniary"
 roles = ["Sound Design"]
+desc = "Tommy gun and Player gib sound effects"
+steamID = "76561198082329692"
 
 [[credits]]
 name = "Polybagel"
 roles = ["Animation"]
-desc = "Mercenary First Person Animations"
+desc = "Mercenary First Person Animations [Walther P-38 & Shotgun]"
+steamID = "76561198196832409"
+
+[[credits]]
+name = "iiboharz"
+roles = ["Maps", "Modelling"]
+desc = "Maps [Wiseau, Databank], Deathmatch cosmetics [Hard hat & Flak Jacket]"
+steamID = "76561197966759649"
+
+[[credits]]
+name = "MacD11"
+roles = ["Maps"]
+desc = "Maps [Wiseau, Dock, Ledge]"
+steamID = "76561197970945736"
+
+[[credits]]
+name = "Bakscratch"
+roles = ["Maps", "Modelling"]
+desc = "Maps [Skate, Gump, Longest Yard, Pitod, Watergate, Overkill]"
+steamID = "76561198000823482"
+
+[[credits]]
+name = "SuoMimies55"
+roles = ["Maps", "Concept Art"]
+desc = "Maps [Crossfire, Backfort, Congo, Boxy]"
+steamID = "76561198052461198"
 
 [[credits]]
 name = "Hex"
 roles = ["Animation", "Maps"]
-desc = """Railgun fire & Charge animation. Berserk Fist animations. 
-Skate, Lobster Shore, Knoxx"""
+desc = "Maps [Skate, Lobster Shore, Knoxx], Mercenary First Person Animations (Railgun, The G.I.B.)"
+steamID = "76561198085098321"
 
 [[credits]]
-name = "Rara Cerberus"
-roles = ["Rigging"]
-desc = "C_Arm ports"
+name = "Batandy"
+roles = ["Modelling"]
+desc = "Tommy Gun"
+steamID = "76561198019137875"
 
 [[credits]]
-name = "DrPyspy"
+name = "Overpovered"
+roles = ["Modelling"]
+desc = "Deathmatch weapons & cosmetics"
+steamID = "76561198027900325"
+
+[[credits]]
+name = "Skerion"
+roles = ["Concept Art", "Texturing"]
+desc = "The G.I.B. concept art, Deathmatch medal art"
+steamID = "76561198018608266"
+
+[[credits]]
+name = "Extra Ram"
 roles = ["Concept Art"]
-desc = "Mercenary Model and Concept Art, Early Civilian concept"
+desc = "Mercenary cosmetic & weapons concept art"
+steamID = "76561198192872987"
 
 [[credits]]
-name = "NoNotTheMemes"
-roles = ["Concept Art", "Modeling"]
-desc = "TFC Heavy and Soldier concept and head sculpt, Juggernaut Concept, Current Civilian concept and Head Sculpt."
+name = "Coolchou Zhao"
+roles = ["Animation", "Concept Art"]
+desc = "Mercenary First Person Animations"
+steamID = "76561198293824540"
+
+[[credits]]
+name = "N-Cognito"
+roles = ["Animation"]
+desc = "Mercenary First Person Animations"
+steamID = "76561198028539550"
+
+[[credits]]
+name = "Dr. Seal"
+roles = ["Animation"]
+desc = "Mercenary Third Person Animations"
+steamID = "76561198082283950"
+
+[[credits]]
+name = "Pink Pyro"
+roles = ["Animation"]
+desc = "Mercenary Third Person Crowbar Animation"
+steamID = "76561198049902099"
 
 [[credits]]
 name = "Lena"
-roles = ["Concept Art", "Maps"]
-desc = "TFC Soldier Head Concept. Maps: Cargo, Dark Zone"
+roles = ["Maps", "Music"]
+desc = "Maps [Cargo, Chestnut, Dark Zone]"
+steamID = "76561198045932063"
 
+[[credits]]
+name = "Thoopje"
+roles = ["Music"]
+desc = "https://www.youtube.com/user/Thoopje"
+steamID = "76561198019173266"
 
+[[credits]]
+name = "Magnus"
+roles = ["Music"]
+desc = "https://www.youtube.com/user/GoldenPickaxe"
+steamID = "76561198029733418"
 
+[[credits]]
+name = "MrModez"
+roles = ["Music"]
+desc = "https://www.youtube.com/channel/UCdC48CtYlydLYa_xJKt98gQ"
+steamID = "76561198029733418"
 
+[[credits]]
+name = "Withered Rose"
+roles = ["Music"]
+desc = "http://witheredrose.bandcamp.com/"
+steamID = "76561197997027140"
+
+[[credits]]
+name = "Ivory Duke"
+roles = ["Programming", "Music"]
+desc = "Implemented MrModez's Winscreen & Deathmatch medal system."
+
+[[credits]]
+name = "FissionMetroid101"
+roles = ["Particles"]
+desc = "Deathmatch particles (Crits, Explosions, G.I.B. Particles, Spawn effects, etc.)"
+steamID = "76561198006774758"
+
+[[credits]]
+name = "Boomsta"
+roles = ["Mapping"]
+desc = "DM Sawdust & DM Oilrig"
+steamID = "76561197999842942"
+
+[[credits]]
+name = "HQDefault"
+roles = ["Mapping"]
+desc = "DM Blood Covenant"
+steamID = "76561198085059722"
+
+[[credits]]
+name = "Gibus Cat"
+roles = ["Mapping", "Promotional Art"]
+desc = "DM Fotia, Duel Shortwave, Menu Artwork"
+steamID = "76561198305988335"
+
+[[credits]]
+name = "HDMineFace"
+roles = ["Mapping"]
+desc = "Early prototype maps"
+steamID = "76561198193780653"
+
+[[credits]]
+name = "Denied"
+roles = ["Texturing"]
+desc = "Graffiti artwork on DM Skate, ingame sprays"
+
+[[credits]]
+name = "Richter"
+roles = ["Texturing"]
+desc = "Office textures, ingame sprays, early prototype maps"
+steamID = "76561198009837726"
+
+[[credits]]
+name = "Msalinas2877"
+roles = ["Programming"]
+desc = "Various fixes"
+steamID = "76561198067410719"
+
+[[credits]]
+name = "Nbc66"
+roles = ["Programming"]
+desc = "Discord rich presence implementation"
+steamID = "76561198063379226"
+
+[[credits]]
+name = "Chris"
+roles = ["Programming", "Mapping"]
+desc = "Security fixes, early prototype maps"
+
+[[credits]]
+name = "ChargingTurnip"
+roles = ["Mapping", "Modelling"]
+desc = "Various early prototype maps"
+steamID = "76561198274208591"
+
+[[credits]]
+name = "Savva"
+roles = ["Mapping"]
+desc = "DM Hollow, MCTF Badlands, Doublecross & Turbine"
+steamID = "76561198034892765"
+
+[[credits]]
+name = "Hambooga"
+roles = ["Mapping"]
+desc = "Various prototype maps, early pass of Longest Yard & The Bad Place/Aerowalk"
+steamID = "76561198147116054"
+
+[[credits]]
+name = "Scarlett Ruby"
+roles = ["Mapping"]
+desc = "Various prototype maps, early pass of Aerowalk"
+
+[[credits]]
+name = "Suzie Scattersilk"
+roles = ["Mapping"]
+desc = "Artpass of The Bad Place, Castle of the Damned"
+steamID = "76561198018889840"
+
+[[credits]]
+name = "Pont"
+roles = ["Mapping"]
+desc = "DM Spillway"
+steamID = "76561198041265792"
+
+[[credits]]
+name = "NoNotTheMemes"
+roles = ["Concept Art", "Modelling"]
+desc = "Placeholder models for P-38 & Super Shotgun, various concept art""
+steamID = "76561198043764287"
